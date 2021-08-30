@@ -2,8 +2,10 @@ import React from 'react';
 
 function Header() {
     return (
-        <div>
-            <h2> This is Header Component</h2>
+        <div className="flex justify-between">
+            <div> Logo</div>
+            <div>SearchBar</div>
+            <div>sidebar</div>
         </div>
     );
 }
