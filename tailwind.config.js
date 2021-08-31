@@ -10,9 +10,11 @@ module.exports = {
                     200: '#88883',
                 },
                 textColor: '#EFEFEF',
+                navBg: '#333333',
             },
             fontFamily: {
                 body: ['Nunito'],
+                osygen: ['Oxygen', 'sans-serif'],
             },
         },
     },
