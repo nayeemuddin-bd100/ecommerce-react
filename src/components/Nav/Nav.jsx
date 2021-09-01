@@ -56,7 +56,10 @@ function Nav({ navShow }) {
                     </span>
                     <div className="flex flex-row text-sm ">
                         <LightBulbIcon className="w-4 mx-1" />
-                        <span>Clearance Up to 30% Off</span>
+                        <div>
+                            {' '}
+                            <span className="text-gray-400">Clearance</span> Up to 30% Off
+                        </div>
                     </div>
                 </div>
             </div>

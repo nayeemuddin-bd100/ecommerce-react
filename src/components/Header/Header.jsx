@@ -8,9 +8,15 @@ function Header({ navShow, setNavShow }) {
             <div className="flex justify-between items-center p-2 text-white text-lg md:mx-8 ">
                 {/* menu Icon */}
                 {navShow ? (
-                    <MenuAlt1Icon className="w-8 sm:hidden " onClick={() => setNavShow(!navShow)} />
+                    <MenuAlt1Icon
+                        className="w-8 sm:hidden transition-all "
+                        onClick={() => setNavShow(!navShow)}
+                    />
                 ) : (
-                    <MenuIcon className="w-8 sm:hidden " onClick={() => setNavShow(!navShow)} />
+                    <MenuIcon
+                        className="w-8 sm:hidden transition-all "
+                        onClick={() => setNavShow(!navShow)}
+                    />
                 )}
 
                 {/* logo */}
