@@ -19,7 +19,13 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            translate: ['group-hover'],
+            display: ['group-hover', 'hover'],
+            transitionProperty: ['group-hover'],
+            padding: ['hover'],
+            transitionDuration: ['group-hover', 'hover'],
+        },
     },
     plugins: [],
 };
