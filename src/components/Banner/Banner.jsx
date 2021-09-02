@@ -7,7 +7,7 @@ import SlideBanner from '../../assets/img/slide-1.jpg';
 function Banner() {
     return (
         <div>
-            <div className="grid md:grid-cols-3 gap-3 md:gap-x-3 py-3 mx-4">
+            <div className="grid md:grid-cols-3 gap-3 md:gap-x-3 py-3 mx-4 overflow-hidden">
                 <div className="md:col-start-1 md:col-end-3 relative">
                     <img
                         className="w-full h-96 object-cover "

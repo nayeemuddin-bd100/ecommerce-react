@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div className="flex justify-center flex-col items-center  ">
+        <div className="flex justify-center flex-col items-center  bg-green-50 py-5">
             <h3 className="text-gray-700"> Copyright &copy; 2021. All Rights Reserved</h3>
             <p>
                 {' '}

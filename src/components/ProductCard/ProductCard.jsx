@@ -9,6 +9,7 @@ export default function ProductCard() {
             <div className="group border border-gray-200 flex flex-col justify-center items-center rounded-lg overflow-hidden  ">
                 <img className="w-full h-48 object-cover " src={DemoProduct} alt="Product 1" />
 
+                {/* Add to cart Button */}
                 <div className="w-full overflow-hidden">
                     <button
                         type="button"

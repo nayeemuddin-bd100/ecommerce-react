@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar/SearchBar';
 
 function Header({ navShow, setNavShow }) {
     return (
-        <div div className="bg-navBg">
+        <div div className="bg-navBg sticky top-0 z-50 sm:static">
             <div className="flex justify-between items-center p-2 text-white text-lg md:mx-8 ">
                 {/* menu Icon */}
                 {navShow ? (
@@ -31,9 +31,19 @@ function Header({ navShow, setNavShow }) {
                 </span>
 
                 {/* side header */}
-                <div className=" flex flex-row justify-center items-center gap-x-3">
-                    <HeartIcon className="w-8" />
-                    <ShoppingCartIcon className="w-8" />
+                <div className=" flex flex-row justify-center items-center gap-x-5 sm:gap-x-8 mr-5 md:mr-0 ">
+                    <div className="relative ">
+                        <HeartIcon className="w-8" />
+                        <h2 className="absolute top-0 right-0  -mt-2 -mr-3 bg-yellow-400 text-xs rounded-full flex justify-center items-center px-2 py-1 text-black">
+                            <span>0</span>
+                        </h2>
+                    </div>
+                    <div className="relative">
+                        <ShoppingCartIcon className="w-8" />
+                        <h2 className="absolute top-0 right-0  -mt-2 -mr-3 bg-yellow-400 text-xs rounded-full flex justify-center items-center px-2 py-1 text-black">
+                            <span>0</span>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,31 +8,37 @@ function Nav({ navShow }) {
     return (
         <>
             {/* for small screen */}
-            {navShow && (
-                <div className="sm:hidden border-b border-gray-300 ">
-                    <div className="py-1 font-osygen mx-2 my-2">
-                        <div className="flex justify-between items-center">
-                            <SearchBar />
-                            <Login />
-                        </div>
 
-                        <div className="  gap-4 flex flex-col justify-center items-center">
-                            <a className="transition-all hover:text-yellow-500" href="#">
-                                Home
-                            </a>
-                            <a className="transition-all hover:text-yellow-500" href="#">
-                                Shop
-                            </a>
-                            <a className="transition-all hover:text-yellow-500" href="#">
-                                Blog
-                            </a>
-                            <a className="transition-all hover:text-yellow-500" href="#">
-                                Contact
-                            </a>
-                        </div>
+            <div
+                className={`sm:hidden border-b border-gray-300   bg-white  z-40 transition duration-700 ease-in-out transform ${
+                    navShow
+                        ? '-translate-y-0 top-14 sticky'
+                        : '-translate-y-64 top-0 left-0 right-0 absolute'
+                }`}
+            >
+                <div className="py-1 font-osygen mx-2 my-2">
+                    <div className="flex justify-between items-center">
+                        <SearchBar />
+                        <Login />
+                    </div>
+
+                    <div className="  gap-4 flex flex-col justify-center items-center">
+                        <a className="transition-all hover:text-yellow-500" href="#">
+                            Home
+                        </a>
+                        <a className="transition-all hover:text-yellow-500" href="#">
+                            Shop
+                        </a>
+                        <a className="transition-all hover:text-yellow-500" href="#">
+                            Blog
+                        </a>
+                        <a className="transition-all hover:text-yellow-500" href="#">
+                            Contact
+                        </a>
                     </div>
                 </div>
-            )}
+            </div>
+
             {/* for large screen */}
 
             <div className="hidden sm:block border-b border-gray-300 sticky top-0 bg-white z-50">
