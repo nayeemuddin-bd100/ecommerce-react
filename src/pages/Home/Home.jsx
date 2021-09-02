@@ -2,10 +2,11 @@ import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import HeroItems from '../../components/HeroItems';
 import NewDeals from '../../components/NewDeals/NewDeals';
+import Outlet from '../../components/Outlet';
 
 function Home() {
     return (
-        <div className="mx-4">
+        <div>
             <Banner />
 
             {/* Hero Carousel */}
@@ -13,6 +14,9 @@ function Home() {
 
             {/* New Deals Section */}
             <NewDeals />
+
+            {/* Outlets Section */}
+            <Outlet />
         </div>
     );
 }

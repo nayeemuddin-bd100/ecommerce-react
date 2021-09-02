@@ -6,7 +6,7 @@ function HeroItems() {
     // const [added, setAdded] = useState(false);
 
     return (
-        <div className="">
+        <div className="mx-4">
             {/* Hero Title Button */}
             <HeroTitles />
             {/* Hero Carousel */}

@@ -11,6 +11,7 @@ module.exports = {
                 },
                 textColor: '#EFEFEF',
                 navBg: '#333333',
+                outletBg: '#f4f7ff ',
             },
             fontFamily: {
                 body: ['Nunito'],
@@ -22,7 +23,7 @@ module.exports = {
         extend: {
             translate: ['group-hover'],
             display: ['group-hover', 'hover'],
-            transitionProperty: ['group-hover'],
+            transitionProperty: ['group-hover', 'hover'],
             padding: ['hover'],
             transitionDuration: ['group-hover', 'hover'],
         },
