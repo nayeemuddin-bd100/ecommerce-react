@@ -2,8 +2,12 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>
-            <h3> This is Footer Component </h3>
+        <div className="flex justify-center flex-col items-center  ">
+            <h3 className="text-gray-700"> Copyright &copy; 2021. All Rights Reserved</h3>
+            <p>
+                {' '}
+                <span className="text-red-600">❤</span> with Nayeem
+            </p>
         </div>
     );
 }
