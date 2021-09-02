@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import HeroItems from '../../components/HeroItems';
 import NewDeals from '../../components/NewDeals/NewDeals';
 import Outlet from '../../components/Outlet';
+import Sponsored from '../../components/Sponsored/Sponsored';
 
 function Home() {
     return (
@@ -17,6 +18,9 @@ function Home() {
 
             {/* Outlets Section */}
             <Outlet />
+
+            {/* Sponsored Section */}
+            <Sponsored />
         </div>
     );
 }

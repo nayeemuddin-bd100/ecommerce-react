@@ -35,7 +35,7 @@ function Nav({ navShow }) {
             )}
             {/* for large screen */}
 
-            <div className="hidden sm:block border-b border-gray-300">
+            <div className="hidden sm:block border-b border-gray-300 sticky top-0 bg-white z-50">
                 <div className="py-1 font-osygen flex-row flex justify-between items-center mx-10">
                     <div className="  gap-4 flex flex-row justify-center items-center ">
                         <a className="transition-all hover:text-yellow-500" href="#">

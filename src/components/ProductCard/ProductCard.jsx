@@ -7,7 +7,7 @@ export default function ProductCard() {
     return (
         <div className="relative sm:mx-1 md:mx-2 ">
             <div className="group border border-gray-200 flex flex-col justify-center items-center rounded-lg overflow-hidden  ">
-                <img className="w-full h-48 my-3 object-cover " src={DemoProduct} alt="Product 1" />
+                <img className="w-full h-48 object-cover " src={DemoProduct} alt="Product 1" />
 
                 <div className="w-full overflow-hidden">
                     <button
