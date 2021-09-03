@@ -22,7 +22,7 @@ function NewDeals() {
                                 Get
                                 <span className="text-black">FREE SHIPPING* & 5% rewards</span> on
                             </h1>
-                            <p>every order with Molla Theme rewards program</p>
+                            <p>every order with monthly rewards program</p>
                         </div>
 
                         <div className="mt-3 md:mt-0">

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { LightBulbIcon } from '@heroicons/react/outline';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Login from '../Login/Login';
 import SearchBar from '../SearchBar/SearchBar';
 
@@ -23,18 +24,35 @@ function Nav({ navShow }) {
                     </div>
 
                     <div className="  gap-4 flex flex-col justify-center items-center">
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500 "
+                            exact
+                            to="/"
+                        >
                             Home
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/shop"
+                        >
                             Shop
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/blog"
+                        >
                             Blog
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/contact"
+                        >
                             Contact
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>
@@ -44,18 +62,35 @@ function Nav({ navShow }) {
             <div className="hidden sm:block border-b border-gray-300 sticky top-0 bg-white z-50">
                 <div className="py-1 font-osygen flex-row flex justify-between items-center mx-10">
                     <div className="  gap-4 flex flex-row justify-center items-center ">
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500  "
+                            exact
+                            to="/"
+                        >
                             Home
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/shop"
+                        >
                             Shop
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/blog"
+                        >
                             Blog
-                        </a>
-                        <a className="transition-all hover:text-yellow-500" href="#">
+                        </NavLink>
+                        <NavLink
+                            activeClassName="border-b border-yellow-500 text-yellow-500"
+                            className="transition-all hover:text-yellow-500"
+                            to="/contact"
+                        >
                             Contact
-                        </a>
+                        </NavLink>
                     </div>
                     <span className="flex justify-center items-center mt-0">
                         <Login />
