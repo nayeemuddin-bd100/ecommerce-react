@@ -7,17 +7,20 @@ function Header({ navShow, setNavShow }) {
         <div div className="bg-navBg sticky top-0 z-50 sm:static">
             <div className="flex justify-between items-center p-2 text-white text-lg md:mx-8 ">
                 {/* menu Icon */}
-                {navShow ? (
-                    <MenuAlt1Icon
-                        className="w-8 sm:hidden transition-all "
-                        onClick={() => setNavShow(!navShow)}
-                    />
-                ) : (
-                    <MenuIcon
-                        className="w-8 sm:hidden transition-all "
-                        onClick={() => setNavShow(!navShow)}
-                    />
-                )}
+
+                <MenuAlt1Icon
+                    className={`w-8 sm:hidden transition duration-700 ease-in-out ${
+                        navShow ? 'block' : 'hidden'
+                    }`}
+                    onClick={() => setNavShow(!navShow)}
+                />
+
+                <MenuIcon
+                    className={`w-8 sm:hidden transition duration-700 ease-in-out ${
+                        !navShow ? 'block' : 'hidden'
+                    }`}
+                    onClick={() => setNavShow(!navShow)}
+                />
 
                 {/* logo */}
                 <div className="font-body text-2xl font-bold">
