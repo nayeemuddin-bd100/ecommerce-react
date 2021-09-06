@@ -26,6 +26,7 @@ module.exports = {
             transitionProperty: ['group-hover', 'hover'],
             padding: ['hover'],
             transitionDuration: ['group-hover', 'hover'],
+            borderColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
         },
     },
     plugins: [],
