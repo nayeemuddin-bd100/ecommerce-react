@@ -1,5 +1,6 @@
 import { HeartIcon, MenuAlt1Icon, MenuIcon, ShoppingCartIcon } from '@heroicons/react/outline';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SearchBar from '../SearchBar/SearchBar';
 
 function Header({ navShow, setNavShow }) {
@@ -35,18 +36,18 @@ function Header({ navShow, setNavShow }) {
 
                 {/* side header */}
                 <div className=" flex flex-row justify-center items-center gap-x-5 sm:gap-x-8 mr-5 md:mr-0 ">
-                    <div className="relative ">
+                    <Link to="/wishlist" className="relative ">
                         <HeartIcon className="w-8" />
                         <h2 className="absolute top-0 right-0  -mt-2 -mr-3 bg-yellow-400 text-xs rounded-full flex justify-center items-center px-2 py-1 text-black">
                             <span>0</span>
                         </h2>
-                    </div>
-                    <div className="relative">
+                    </Link>
+                    <Link to="/cart" className="relative">
                         <ShoppingCartIcon className="w-8" />
                         <h2 className="absolute top-0 right-0  -mt-2 -mr-3 bg-yellow-400 text-xs rounded-full flex justify-center items-center px-2 py-1 text-black">
                             <span>0</span>
                         </h2>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
