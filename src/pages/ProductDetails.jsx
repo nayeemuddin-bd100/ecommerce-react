@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DemoProduct from '../assets/img/demo-product.jpg';
 import ProductCard from '../components/ProductCard/ProductCard';
 
 function ProductDetails() {
+    const [addToWishList, setAddToWishList] = useState(false);
     return (
         <div className="mx-8 ">
             <div className="grid grid-cols-1 sm:grid-cols-7 grid-rows-1 text-gray-600 border-b border-gray-200 pb-4">
@@ -40,12 +42,23 @@ function ProductDetails() {
                             >
                                 Add To Cart
                             </button>
-                            <button
-                                type="button"
-                                className="mt-4 border-b border-yellow-500 hover:text-yellow-400 transition duration-500 ease-in-out ml-5 text-sm"
-                            >
-                                ❤ Go To Wishlist
-                            </button>
+                            {addToWishList ? (
+                                <Link
+                                    to="/wishList"
+                                    type="button"
+                                    className="mt-4 border-b border-yellow-500 hover:text-yellow-400 transition duration-500 ease-in-out ml-5 text-sm"
+                                >
+                                    <span className="text-yellow-500">❤</span> Go To WishList
+                                </Link>
+                            ) : (
+                                <button
+                                    type="button"
+                                    onClick={() => setAddToWishList(true)}
+                                    className="mt-4 border-b border-yellow-500 hover:text-yellow-400 transition duration-500 ease-in-out ml-5 text-sm"
+                                >
+                                    ❤ Add To WishList
+                                </button>
+                            )}
                         </div>
                         <div className="text-gray-600 text-sm mt-4 ">
                             <h2>
