@@ -3,7 +3,7 @@ import React from 'react';
 
 function Checkout() {
     return (
-        <div className="grid grid-cols-1 py-5 mx-3 sm:mx-8">
+        <div className="grid grid-cols-1 py-5 mx-3 md:mx-40">
             <form className="">
                 <div className="flex flex-row w-full gap-4 sm:gap-8">
                     <div className="w-full">
