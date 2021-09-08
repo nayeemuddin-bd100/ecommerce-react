@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import NotFound from './components/NotFound/NotFound';
 import Blog from './pages/Blog';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import ProductDetails from './pages/ProductDetails';
@@ -21,6 +22,7 @@ function App() {
                 <Route exact path="/product/:id" component={ProductDetails} />
                 <Route exact path="/cart" component={Cart} />
                 <Route exact path="/wishlist" component={WishList} />
+                <Route exact path="/checkout" component={Checkout} />
                 <Route exact path="/" component={Home} />
                 <Route exact path="*" component={NotFound} />
             </Switch>
