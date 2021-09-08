@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Bg2 from '../../assets/img/bg-2.jpg';
 import ProductCard from '../ProductCard/ProductCard';
 import OutletHead from './OutletHead';
@@ -46,12 +47,13 @@ function Outlet() {
                     </div>
                 </div>
                 <div className="py-5">
-                    <button
+                    <Link
+                        to="/shop"
                         className="py-2 px-4 border border-gray-400 rounded-full text-sm font-light text-gray-800 hover:bg-white hover:text-yellow-500  transition duration-500 ease-in-out"
                         type="button"
                     >
                         Shop More Outlet Deals →
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
