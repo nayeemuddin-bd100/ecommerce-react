@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Banner1 from '../../assets/img/banner-1.jpg';
 import Banner2 from '../../assets/img/banner-2.jpg';
 import Banner3 from '../../assets/img/banner-3.jpg';
@@ -43,12 +44,13 @@ function Banner() {
                                 <span className="font-bold text-gray-900">Edifier</span> <br />{' '}
                                 Stereo Bluetooth
                             </h2>
-                            <button
+                            <Link
+                                to="/shop"
                                 className="bg-gray-300 hover:bg-yellow-400 transition-all px-5 rounded-lg"
                                 type="button"
                             >
                                 Shop Now <span>→</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="relative">
@@ -64,12 +66,13 @@ function Banner() {
                                 <span className="font-bold text-gray-900">GoPro - Fusion 360</span>{' '}
                                 <br /> Save $70
                             </h2>
-                            <button
+                            <Link
+                                to="/shop"
                                 className="bg-gray-300 hover:bg-yellow-400 transition-all px-5 rounded-lg"
                                 type="button"
                             >
                                 Shop Now <span>→</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="relative">
@@ -84,12 +87,13 @@ function Banner() {
                                 <span className="font-bold text-gray-900">Apple Watch 4</span>{' '}
                                 <br /> Our Hottest Deals
                             </h2>
-                            <button
+                            <Link
+                                to="/shop"
                                 className="bg-gray-300 hover:bg-yellow-400 transition-all px-5 rounded-lg"
                                 type="button"
                             >
                                 Shop Now <span>→</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
