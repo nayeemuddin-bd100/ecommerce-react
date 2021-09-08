@@ -1,5 +1,6 @@
 import { HeartIcon } from '@heroicons/react/outline';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DemoProduct from '../../assets/img/demo-product.jpg';
 
 export default function ProductCard() {
@@ -21,10 +22,13 @@ export default function ProductCard() {
                 {/* card details */}
                 <div className="flex flex-col mx-4 gap-1 font-osygen  overflow-hidden ">
                     <p className="text-gray-400 text-sm "> Entertainment , TV</p>
-                    <p className="text-base font-normal hover:text-yellow-500 transition-all">
+                    <Link
+                        to="/product/2"
+                        className="text-base font-normal hover:text-yellow-500 transition-all"
+                    >
                         {' '}
                         Apple - Watch Series 3 with White Sport Band{' '}
-                    </p>
+                    </Link>
                     <h3 className="text-base text-yellow-500"> $214.99 </h3>
                     <p className="text-xs text-gray-400 mb-3">( Rating : 4.3 )</p>
                 </div>
